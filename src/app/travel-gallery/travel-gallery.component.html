@@ -1,0 +1,18 @@
+<div class="gallery-container">
+  <div *ngIf="loading" class="loading-spinner">
+    <app-spinner></app-spinner> <!-- Use your spinner component -->
+  </div>
+
+  <div *ngIf="!loading" class="card-title">
+    <h2>Welcome to Travel Destinations</h2>
+    <p>Wondering where to go next? Explore our hand-picked destinations!</p>
+  </div>
+
+  <div class="card-grid" *ngIf="!loading">
+    <mat-card *ngFor="let destination of destinations" class="destination-card">
+      <img mat-card-image [src]="destination.image" alt="{{ destination.title }}">
+      <mat-card-title>{{ destination.title }}</mat-card-title>
+      <mat-card-content>{{ destination.description }}</mat-card-content>
+    </mat-card>
+  </div>
+</div>

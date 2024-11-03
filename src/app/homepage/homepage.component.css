@@ -1,0 +1,29 @@
+.homepage-container {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+  }
+  
+  .content {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 8px;
+    justify-content: center; /* Center the buttons horizontally */
+    align-items: center; /* Align the buttons vertically */
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  .login-button {
+    margin-right: 10px; /* Adjust the value as needed */
+  }
+  .content button {
+    margin: 0 10px; /* Add 10px margin on both sides of each button */
+  }

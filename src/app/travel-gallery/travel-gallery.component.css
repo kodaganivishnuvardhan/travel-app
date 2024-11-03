@@ -1,0 +1,66 @@
+/* travel-gallery.component.css */
+
+.gallery-container {
+    text-align: center;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333; /* Darker text for better readability */
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 20px;
+    justify-content: center;
+}
+
+.destination-card {
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    overflow: hidden; /* Ensures image doesn't overflow */
+}
+
+.destination-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out; /* Smooth image hover effect */
+}
+
+.destination-card:hover img {
+    transform: scale(1.05); /* Slight zoom-in on hover */
+}
+
+.destination-card h3 {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #555; /* Slightly darker text for better contrast */
+}
+
+.destination-card p {
+    font-size: 14px;
+    color: #888; /* Lighter text for a subtle description */
+    text-align: justify;
+    padding: 10px;
+}
+.spinner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px; /* Adjust height as needed */
+}
+.spinner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px; /* Adjust height as needed */
+  }
+  
