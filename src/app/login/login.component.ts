@@ -12,7 +12,7 @@ export class LoginComponent {
 
   constructor(private router: Router) {}
 
-  onSubmit() {
+  onSubmit() { 
     // Simulated login check (replace with your actual login logic)
     if (this.username === 'admin' && this.password === 'admin') {
       alert('Login successful!');
